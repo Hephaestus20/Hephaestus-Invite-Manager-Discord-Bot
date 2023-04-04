@@ -2,13 +2,12 @@ const Discord = require("discord.js");
 const db = require("quick.db");
 
 exports.run = async (client, message, args) => {
-  // Get the mentioned user
+
   const user = message.mentions.users.first();
   if (!user) {
     return message.reply("Error! You must mention a user!");
   }
 
-  // Ask for confirmation before resetting the user's invite info
   const confirmEmbed = new Discord.MessageEmbed()
     .setTitle("Confirmation for Resetting Invite Info")
     .setDescription(`Are you sure you want to reset all the invite info for **${user.tag}**?`)

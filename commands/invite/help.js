@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
   const helpEmbed = new Discord.MessageEmbed()
     .setColor("#0099ff")
     .setTitle("Help Menu")
-    .setDescription("**Invites**\n``addbonus``, ``removebonus``, ``leaderboard``, ``profile``, ``resetinvite``\n**Ranks**\n``addrank``,``ranks``,``removerank``\n**Config**\n``config``\n**Other**\n``Vote``, ``Ping``, ``Developer``, ``Developer``\n\n**[Bot Invite](https://discord.com/api/oauth2/authorize?client_id=1090684354990186627&permissions=8&scope=bot)** - **[Support Server](https://discord.gg/AZVm4V28xE)**")
+    .setDescription("**Invites**\n``addbonus``, ``removebonus``, ``leaderboard``, ``profile``, ``resetinvite``\n**Ranks**\n``addrank``,``ranks``,``removerank``\n**Config**\n``config``\n**Other**\n``Vote``, ``Ping``, ``Developer``, ``Developer``\n\n**[Bot Invite](https://discord.gg/QKucPzYs5M)** - **[Support Server](https://discord.gg/QKucPzYs5M)**")
     .setTimestamp();
   const helpMessage = await message.channel.send(helpEmbed);
 };

@@ -15,3 +15,5 @@ Discord: iHephaestus20#4307
 !removerank
 !ranklist
 !resetinvite
+
+![resim](https://gcdnb.pbrd.co/images/qX7nxZZQNder.jpg?o=1))

@@ -1,0 +1,26 @@
+{
+  "name": "Invite",
+  "version": "1.0.0",
+  "description": "Invite Manager Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start":"node index.js"
+  },
+  "keywords": [
+    "rootcf"
+  ],
+ "engines": {
+    "node": "v16.x"
+  },
+  "author": "rootcf",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^12.5.1",
+    "quick.db": "^7.0.0",
+    "fs": "^0.0.1-security",
+    "pretty-ms": "^7.0.1"
+  }
+}

@@ -8,9 +8,9 @@ exports.run = async (client, message, args) => {
 
   const rolesWithInvites = [];
 
-  // Loop through each role in the server
+
   message.guild.roles.cache.forEach((role) => {
-    // Check if the role has an associated invite requirement
+
     const requiredInvites = db.get(`inviteRole_${message.guild.id}_${role.id}`);
     if (requiredInvites) {
       rolesWithInvites.push({
@@ -20,10 +20,10 @@ exports.run = async (client, message, args) => {
     }
   });
 
-  // Sort the roles based on their required invite count in ascending order
+
   rolesWithInvites.sort((a, b) => a.requiredInvites - b.requiredInvites);
 
-  // Create an embed to display the sorted roles
+
   const embed = new Discord.MessageEmbed()
     .setTitle("Roles with Invite Requirements")
     .setColor("#00ff00");

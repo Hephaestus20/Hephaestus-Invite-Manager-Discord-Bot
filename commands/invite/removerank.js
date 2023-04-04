@@ -12,12 +12,12 @@ exports.run = async (client, message, args) => {
     return message.reply("Please mention a role to remove. Usage: `removerank <@role>`");
   }
 
-  // Check if the role exists in the database
+
   if (!db.get(`inviteRole_${message.guild.id}_${role.id}`)) {
     return message.reply(`${role.name} is not a valid invite role!`);
   }
 
-  // Remove role information from the database
+ 
   db.delete(`inviteRole_${message.guild.id}_${role.id}`);
 
   const successEmbed = new Discord.MessageEmbed()
